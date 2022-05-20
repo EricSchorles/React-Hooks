@@ -1,0 +1,55 @@
+.Carousel-parent {
+    box-sizing: border-box;
+    width: 100vw;
+}
+
+.Carousel-items {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    -webkit-overflow-scrolling: touch;
+    display: flex;
+    overflow-x: auto;
+}
+
+.Carousel-item1 {
+    background-color: #0746c5;
+    color: white;
+    width: 50.3vw;
+    flex: none;
+    height: 50px;
+}
+
+.Carousel-item2 {
+    background-color: #15e275;
+    color: white;
+    width: 50.3vw;
+    flex: none;
+    height: 50px;
+
+}
+
+.Carousel-item3 {
+    background-color: #ffd500;
+    color: white;
+    width: 50.3vw;
+    flex: none;
+    height: 50px;
+}
+
+.Carousel-item4 {
+    background-color: #9428d7;
+    color: white;
+    width: 50.3vw;
+    flex: none;
+    height: 50px;
+}
+
+.Carousel-arrow-left {
+    position: absolute;
+}
+
+.Carousel-arrow-right {
+    position: absolute;
+    right: 0;
+}

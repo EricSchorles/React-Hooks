@@ -1,0 +1,71 @@
+header {
+    height: 10vh;
+}
+
+.App-header {
+    z-index: 9998;
+    background-color: #282c34;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    position: absolute;
+    width: 100%;
+}
+
+.App-logo {
+    height: 10vh;
+    cursor: pointer;
+}
+
+.App-tab {
+    height: 100vh;
+    z-index: 9998;
+    width: 55vw;
+    background-color: #282c34;
+    position: relative;
+    transform: translateX(-100%);
+    transition: transform .4s linear;
+
+}
+
+.App-tab.active {
+    height: 100vh;
+    width: 55vw;
+    z-index: 9999;
+    background-color: #282c34;
+    position: fixed;
+    transform: translateX(0%);
+    overflow-y: hidden;
+    -webkit-transition: width .4s linear;
+    transition: transform .4s linear;
+}
+
+.App-title {
+    transform: translateX(0%);
+    transition: transform .4s linear;
+}
+
+.App-title.active {
+    transform: translateX(510%);
+    -webkit-transition: .4s linear;
+    transition: transform .4s linear;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
